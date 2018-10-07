@@ -18,8 +18,8 @@ namespace Product
 
         public bool isActive()
         {
-            var isActive = (_employee.EndDate > _employee.StartDate) ? true : false;
-
+            var isActive = (_employee.EndDate > DateTime.Today) ? true : false;
+            
             return isActive;
         }
 

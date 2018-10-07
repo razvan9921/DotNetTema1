@@ -19,7 +19,7 @@ namespace ProductTest
                 FirstName = "Dumitru",
                 LastName = "Mafia",
                 StartDate = new DateTime(2008, 3, 15),
-                EndDate = new DateTime(2018, 3, 15),
+                EndDate = new DateTime(2019, 3, 15),
                 Salary = 2250
             };
         }

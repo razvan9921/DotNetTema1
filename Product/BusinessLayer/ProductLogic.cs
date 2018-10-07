@@ -5,6 +5,7 @@ namespace Product
     public class ProductLogic
     {
         private ProductEntity _product;
+
         public ProductLogic(ProductEntity product)
         {
             _product = product ?? throw new ArgumentNullException(nameof(product));

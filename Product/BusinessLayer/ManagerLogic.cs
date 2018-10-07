@@ -1,27 +1,29 @@
-// using System;
+//NOT NECESSARY BECAUSE I MADE UP THE EMPLOYEELOGIC WICH DOES THE SAME THING
 
-// namespace Product
-// {
-//     public class ManagerLogic
-//     {
-//         private ManagerEntity _manager;
+using System;
 
-//         public ManagerLogic(ManagerEntity manager)
-//         {
-//             _manager = manager ?? throw new ArgumentNullException(nameof(manager));
-//         }
+namespace Product
+{
+    public class ManagerLogic
+    {
+        private ManagerEntity _manager;
 
-//         public string GetFullName()
-//         {
-//             return _manager.FirstName + " " + _manager.LastName;
-//         }
+        public ManagerLogic(ManagerEntity manager)
+        {
+            _manager = manager ?? throw new ArgumentNullException(nameof(manager));
+        }
 
-//         public bool isActive()
-//         {
-//             var isActive = (_manager.EndDate > _manager.StartDate) ? true : false;
+        public string GetFullName()
+        {
+            return _manager.FirstName + " " + _manager.LastName;
+        }
 
-//             return isActive;
-//         }
+        public bool isActive()
+        {
+            var isActive = (_manager.EndDate > DateTime.Today) ? true : false;
 
-//     }
-// }
+            return isActive;
+        }
+
+    }
+}

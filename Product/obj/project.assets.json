@@ -182,11 +182,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rorhu\\Desktop\\Product\\Product.csproj",
+      "projectUniqueName": "C:\\Users\\rorhu\\Desktop\\tema\\DotNetTema1\\Product\\Product.csproj",
       "projectName": "Product",
-      "projectPath": "C:\\Users\\rorhu\\Desktop\\Product\\Product.csproj",
+      "projectPath": "C:\\Users\\rorhu\\Desktop\\tema\\DotNetTema1\\Product\\Product.csproj",
       "packagesPath": "C:\\Users\\rorhu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rorhu\\Desktop\\Product\\obj\\",
+      "outputPath": "C:\\Users\\rorhu\\Desktop\\tema\\DotNetTema1\\Product\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

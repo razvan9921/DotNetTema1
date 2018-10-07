@@ -25,11 +25,6 @@ namespace ProductTest
             };
         }
 
-        [TestCleanup]
-        public void TestCleanup(){
-            productEntity=null;
-        }
-
         [TestMethod]
         public void Given_ProductEntityAndProductLogic_When_CallingIsValid_Then_ReturnTrueIfEndDateIsBiggerThanTheStartDateAndIfProductEntityIsNotNull()
         {
@@ -43,6 +38,15 @@ namespace ProductTest
             isValid.Should().BeTrue();
         }
 
+         [TestMethod]
+        public void Given_ProductEntity_When_CallingProjectLogicConstructor_Then_CheckIfProjectEntityIsNotNull()
+        {
+            //Arrange && Act
+            var productLogic = new ProductLogic(productEntity);
+            //Assert
+            productLogic.Should().NotBeNull();
+        }
+
         [TestMethod]
         public void Given_ProductEntityAndProductLogic_When_CallingComputeVAT_Then_ReturnTheProductPriceWithTheVATComputed()
         {
@@ -54,6 +58,12 @@ namespace ProductTest
 
             //Assert
             productWithVat.Should().BeGreaterThan(productEntity.Price);
+        }
+
+        [TestCleanup]
+        public void TestCleanup()
+        {
+            productEntity = null;
         }
     }
 }

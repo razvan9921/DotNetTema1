@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "a4e1aab482ba2e95e87e95d501134a4ff75ff682"
+    "signature": "d0cce9dd9dae2b6606d9aa0eadf949886e0e908b"
   },
   "compilationOptions": {},
   "targets": {
@@ -12,12 +12,14 @@
           "Microsoft.NET.Test.Sdk": "15.7.2",
           "NUnit3TestAdapter": "3.10.0",
           "Product": "1.0.0",
+          "coverlet.msbuild": "2.3.0",
           "NUnit": "3.10.1"
         },
         "runtime": {
           "ProductTestNunit.dll": {}
         }
       },
+      "coverlet.msbuild/2.3.0": {},
       "FluentAssertions/5.4.2": {
         "dependencies": {
           "System.Configuration.ConfigurationManager": "4.4.0"
@@ -1110,6 +1112,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "coverlet.msbuild/2.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JcCe2m13ddX8x1mHGz/McrDA9eGFUpLMx78O1VmtT9xyC+TbYQHkJ5YB0MbL/S5BZI3MGJvZp5w3Unypv+pprA==",
+      "path": "coverlet.msbuild/2.3.0",
+      "hashPath": "coverlet.msbuild.2.3.0.nupkg.sha512"
     },
     "FluentAssertions/5.4.2": {
       "type": "package",

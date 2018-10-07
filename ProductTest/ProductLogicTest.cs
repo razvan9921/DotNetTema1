@@ -38,11 +38,12 @@ namespace ProductTest
             isValid.Should().BeTrue();
         }
 
-         [TestMethod]
+        [TestMethod]
         public void Given_ProductEntity_When_CallingProjectLogicConstructor_Then_CheckIfProjectEntityIsNotNull()
         {
             //Arrange && Act
             var productLogic = new ProductLogic(productEntity);
+
             //Assert
             productLogic.Should().NotBeNull();
         }

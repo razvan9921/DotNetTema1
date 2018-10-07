@@ -1,5 +1,5 @@
-
 using System;
+using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Product;
 
@@ -8,11 +8,12 @@ namespace ProductTest
     [TestClass]
     public class ProductLogicTest
     {
-        [TestMethod]
-        public void Given_ProductEntityAndProductLogic_When_CallingIsValid_Then_ReturnTrueIfEndDateIsBiggerThanTheStartDateAndIfProductEntityIsNotNull()
+        private ProductEntity productEntity = new ProductEntity();
+
+        [TestInitialize]
+        public void TestInitialize()
         {
-            //arrange
-            var productEntity = new ProductEntity()
+            productEntity = new ProductEntity()
             {
                 Id = new Guid("761DFFC4-B76B-42BF-98C7-EFE7FB28F283"),
                 Name = "Generic Name",
@@ -22,12 +23,37 @@ namespace ProductTest
                 Price = 399.99,
                 VAT = 0.15
             };
+        }
+
+        [TestCleanup]
+        public void TestCleanup(){
+            productEntity=null;
+        }
+
+        [TestMethod]
+        public void Given_ProductEntityAndProductLogic_When_CallingIsValid_Then_ReturnTrueIfEndDateIsBiggerThanTheStartDateAndIfProductEntityIsNotNull()
+        {
+            //Arrange
             var productLogic = new ProductLogic(productEntity);
-            //act
+
+            //Act
             var isValid = productLogic.isValid();
 
-            //assert
-            Assert.AreEqual(true,isValid);
+            //Assert
+            isValid.Should().BeTrue();
+        }
+
+        [TestMethod]
+        public void Given_ProductEntityAndProductLogic_When_CallingComputeVAT_Then_ReturnTheProductPriceWithTheVATComputed()
+        {
+            //Arrange
+            var productLogic = new ProductLogic(productEntity);
+
+            //Act
+            var productWithVat = productLogic.ComputeVAT();
+
+            //Assert
+            productWithVat.Should().BeGreaterThan(productEntity.Price);
         }
     }
 }

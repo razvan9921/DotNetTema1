@@ -2,9 +2,9 @@ using System;
 
 namespace Product
 {
-    public class ManagerEntity : EmployeeEntity
+    public class ArchitectEntity : EmployeeEntity
     {
-       public override Guid Id { get; set; }
+        public override Guid Id { get; set; }
         public override string FirstName { get; set; }
         public override string LastName { get; set; }
         public override DateTime StartDate { get; set; }

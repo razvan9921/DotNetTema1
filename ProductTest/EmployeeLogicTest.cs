@@ -8,12 +8,13 @@ namespace ProductTest
     [TestClass]
     public class EmployeeLogicTest
     {
-        private EmployeeEntity employeeEntity = new EmployeeEntity();
+        private EmployeeEntity employeeEntity;
 
         [TestInitialize]
         public void TestInitialize()
         {
-            employeeEntity = new EmployeeEntity()
+            //used managerEntity instead of EmployeeEntity because of the instance of an abstract class
+            employeeEntity = new ManagerEntity 
             {
                 Id = new Guid("97F201CD-9567-4361-8239-61EA74BBD2CD"),
                 FirstName = "Dumitru",

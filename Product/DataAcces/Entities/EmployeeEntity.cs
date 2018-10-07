@@ -2,13 +2,13 @@ using System;
 
 namespace Product
 {
-    public class EmployeeEntity
+    public abstract class EmployeeEntity
     {
-        public Guid Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime EndDate { get; set; }
-        public Double Salary { get; set; }
+        public abstract Guid Id { get; set; }
+        public abstract string FirstName { get; set; }
+        public abstract string LastName { get; set; }
+        public abstract DateTime StartDate { get; set; }
+        public abstract DateTime EndDate { get; set; }
+        public abstract Double Salary { get; set; }
     }
 }

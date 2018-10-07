@@ -7,21 +7,14 @@ namespace Product
         private ProductEntity _product;
         public ProductLogic(ProductEntity product)
         {
-            if (product == null)
-            {
-                throw new ArgumentNullException(nameof(_product));
-            }
-
-            _product = product;
+            _product = product ?? throw new ArgumentNullException(nameof(product));
         }
 
         public bool isValid()
         {
-            if (_product.StartDate < _product.EndDate)
-            {
-                return true;
-            }
-            return false;
+            var isValid = (_product.StartDate < _product.EndDate) ? true : false;
+
+            return isValid;
         }
 
         public Double ComputeVAT()

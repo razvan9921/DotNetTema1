@@ -1,0 +1,17 @@
+C:\Users\rorhu\Desktop\tema\DotNetTema1\ProductTest\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\rorhu\Desktop\tema\DotNetTema1\ProductTest\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\rorhu\Desktop\tema\DotNetTema1\ProductTest\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\rorhu\Desktop\tema\DotNetTema1\ProductTest\bin\Debug\netcoreapp2.1\ProductTest.deps.json
+C:\Users\rorhu\Desktop\tema\DotNetTema1\ProductTest\bin\Debug\netcoreapp2.1\ProductTest.runtimeconfig.json
+C:\Users\rorhu\Desktop\tema\DotNetTema1\ProductTest\bin\Debug\netcoreapp2.1\ProductTest.runtimeconfig.dev.json
+C:\Users\rorhu\Desktop\tema\DotNetTema1\ProductTest\bin\Debug\netcoreapp2.1\ProductTest.dll
+C:\Users\rorhu\Desktop\tema\DotNetTema1\ProductTest\bin\Debug\netcoreapp2.1\ProductTest.pdb
+C:\Users\rorhu\Desktop\tema\DotNetTema1\ProductTest\obj\Debug\netcoreapp2.1\ProductTest.csprojAssemblyReference.cache
+C:\Users\rorhu\Desktop\tema\DotNetTema1\ProductTest\obj\Debug\netcoreapp2.1\ProductTest.csproj.CoreCompileInputs.cache
+C:\Users\rorhu\Desktop\tema\DotNetTema1\ProductTest\obj\Debug\netcoreapp2.1\ProductTest.AssemblyInfoInputs.cache
+C:\Users\rorhu\Desktop\tema\DotNetTema1\ProductTest\obj\Debug\netcoreapp2.1\ProductTest.AssemblyInfo.cs
+C:\Users\rorhu\Desktop\tema\DotNetTema1\ProductTest\obj\Debug\netcoreapp2.1\ProductTest.dll
+C:\Users\rorhu\Desktop\tema\DotNetTema1\ProductTest\obj\Debug\netcoreapp2.1\ProductTest.pdb
+C:\Users\rorhu\Desktop\tema\DotNetTema1\ProductTest\bin\Debug\netcoreapp2.1\Product.dll
+C:\Users\rorhu\Desktop\tema\DotNetTema1\ProductTest\bin\Debug\netcoreapp2.1\Product.pdb
+C:\Users\rorhu\Desktop\tema\DotNetTema1\ProductTest\obj\Debug\netcoreapp2.1\ProductTest.csproj.CopyComplete

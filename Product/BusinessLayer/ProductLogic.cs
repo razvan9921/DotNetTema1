@@ -4,27 +4,33 @@ namespace Product
 {
     public class ProductLogic
     {
-        public bool isValid(ProductEntity product)
+        private ProductEntity _product;
+        public ProductLogic(ProductEntity product)
         {
-            if (product == null)
+            _product = product;
+        }
+
+        public bool isValid()
+        {
+            if (_product == null)
             {
-                throw new ArgumentNullException(nameof(product));
+                throw new ArgumentNullException(nameof(_product));
             }
 
-            if (product.StartDate < product.EndDate)
+            if (_product.StartDate < _product.EndDate)
             {
                 return true;
             }
             return false;
         }
-        public float ComputeVAT(ProductEntity product)
+        public Double ComputeVAT()
         {
-            if (product == null)
+            if (_product == null)
             {
-                throw new ArgumentNullException(nameof(product));
+                throw new ArgumentNullException(nameof(_product));
             }
 
-            return product.Price + (product.VAT * product.Price);
+            return _product.Price + (_product.VAT * _product.Price);
         }
     }
 }

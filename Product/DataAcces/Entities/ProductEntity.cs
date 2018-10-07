@@ -9,7 +9,7 @@ namespace Product
         public string Description { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
-        public float Price { get; set; }
-        public float VAT { get; set; }
+        public Double Price { get; set; }
+        public Double VAT { get; set; }
     }
 }
